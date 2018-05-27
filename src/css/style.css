@@ -1,0 +1,13 @@
+#header-section {
+  background: url("../img/option2.jpg") no-repeat;
+  background-size: cover;
+  min-height: 470px; }
+  #header-section .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 700px; }
+  #header-section .home-inner {
+    padding-top: 150px; }
