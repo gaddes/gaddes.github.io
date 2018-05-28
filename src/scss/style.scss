@@ -1,13 +1,24 @@
 $dark-overlay: rgba(0,0,0,0.4);
 $light-overlay: rgba(211,211,211,0.8);
 
-#main-jumbotron {
+// Custom $colors
+$orange: rgba(255,155,0,1);
+$orange-light: rgba(255,155,0,0.8);
+$black: rgba(0,0,0,1);
+$black-light: rgba(0,0,0,0.8);
+
+#jumbotron-index {
   background: url('../img/option1.jpg') no-repeat;
   background-size: cover;
+}
 
-  .light-overlay {
-    background-color: $light-overlay;
-  }
+#jumbotron-contact {
+  background: url('../img/option1.jpg') no-repeat;
+  background-size: cover;
+}
+
+.light-overlay {
+  background-color: $light-overlay;
 }
 
 img {
@@ -16,4 +27,29 @@ img {
   border-radius: 50%;
   border: 1px solid $dark-overlay;
   box-shadow: 0px 4px 8px $dark-overlay;
+}
+
+// Tweak button colors
+
+.btn-primary {
+  background-color: $orange-light;
+  border-color: $orange-light;
+  color: $black-light;
+}
+
+.btn-primary:hover {
+  background-color: $orange;
+  border-color: $orange;
+  color: $black;
+}
+
+.btn-outline-primary {
+  border-color: $orange-light;
+  color: $black-light;
+}
+
+.btn-outline-primary:hover {
+  background-color: $orange-light;
+  border-color: $orange-light;
+  color: $black;
 }
