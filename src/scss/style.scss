@@ -1,20 +1,24 @@
 $dark-overlay: rgba(0,0,0,0.4);
+$light-overlay: rgba(211,211,211,0.8);
 
-#header-section {
-  background: url('../img/option2.jpg') no-repeat;
+#main-jumbotron {
+  background: url('../img/option1.jpg') no-repeat;
   background-size: cover;
-  min-height: 470px;
 
-  .dark-overlay {
-    background-color: $dark-overlay;
-    position: absolute;
+  .light-overlay {
+    background-color: $light-overlay;
+    // position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 700px;
+    // height: 200px;
   }
+}
 
-  .home-inner {
-    padding-top: 150px;
-  }
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid $dark-overlay;
+  box-shadow: 0px 4px 8px $dark-overlay;
 }
