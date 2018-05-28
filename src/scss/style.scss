@@ -7,18 +7,20 @@ $light-overlay: rgba(211,211,211,0.8);
 
   .light-overlay {
     background-color: $light-overlay;
-    // position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    // height: 200px;
   }
 }
 
 img {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
   border: 1px solid $dark-overlay;
+  box-shadow: 0px 4px 8px $dark-overlay;
+}
+
+.depth-1 {
+  box-shadow: 0px 2px 4px $dark-overlay;
+}
+
+.depth-2 {
   box-shadow: 0px 4px 8px $dark-overlay;
 }
