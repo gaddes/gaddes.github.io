@@ -1,20 +1,18 @@
 #jumbotron-index {
   background: url("../img/option1.jpg") no-repeat;
   background-size: cover; }
+  #jumbotron-index img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); }
 
 #jumbotron-contact {
-  background: url("../img/option1.jpg") no-repeat;
+  background: url("../img/option2.jpg") no-repeat;
   background-size: cover; }
 
 .light-overlay {
   background-color: rgba(211, 211, 211, 0.8); }
-
-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); }
 
 .btn-primary {
   background-color: rgba(255, 155, 0, 0.8);
