@@ -7,6 +7,8 @@ $orange-light: rgba(255,155,0,0.8);
 $black: rgba(0,0,0,1);
 $black-light: rgba(0,0,0,0.8);
 
+// index.html
+
 #jumbotron-index {
   background: url('../img/option1.jpg') no-repeat;
   background-size: cover;
@@ -22,6 +24,17 @@ $black-light: rgba(0,0,0,0.8);
 #jumbotron-contact {
   background: url('../img/option2.jpg') no-repeat;
   background-size: cover;
+}
+
+// tech.html
+
+#tech-container {
+  img {
+    width: 200px;
+    height: 200px;
+    // border: 1px solid $dark-overlay;
+    box-shadow: 0px 4px 8px $dark-overlay;
+  }
 }
 
 .light-overlay {
