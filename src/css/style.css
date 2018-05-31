@@ -16,6 +16,32 @@
   height: 200px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); }
 
+#tech-container .background-highlight-orange {
+  background-color: rgba(255, 155, 0, 0.8); }
+
+#tech-container .background-highlight-blue {
+  background-color: rgba(75, 225, 255, 0.7); }
+
+#tech-container .background-highlight-pink {
+  background-color: rgba(206, 103, 154, 0.7); }
+
+#tech-container .background-highlight-purple {
+  background-color: rgba(131, 79, 209, 0.7); }
+
+#tech-container .background-highlight-yellow {
+  background-color: rgba(240, 218, 91, 0.7); }
+
+#tech-container .background-highlight-green {
+  background-color: rgba(128, 203, 136, 0.7); }
+
+#tech-container .background-highlight-gray {
+  background-color: rgba(211, 211, 211, 0.8); }
+
+#tech-container_2 img {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); }
+
 .light-overlay {
   background-color: rgba(211, 211, 211, 0.8); }
 
