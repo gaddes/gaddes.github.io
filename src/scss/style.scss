@@ -4,18 +4,81 @@ $light-overlay: rgba(211,211,211,0.8);
 // Custom $colors
 $orange: rgba(255,155,0,1);
 $orange-light: rgba(255,155,0,0.8);
+$red: rgba(242,100,37,1);
+$red-light: rgba(242,100,37,0.5);
 $black: rgba(0,0,0,1);
-$black-light: rgba(0,0,0,0.8);
+$black-light: rgba(0,0,0,0.5);
 $blue: rgba(75,225,255,1);
-$blue-light: rgba(75,225,255,0.7);
+$blue-light: rgba(75,225,255,0.5);
 $pink: rgba(206,103,154,1);
-$pink-light: rgba(206,103,154,0.7);
+$pink-light: rgba(206,103,154,0.5);
 $purple: rgba(131,79,209,1);
-$purple-light: rgba(131,79,209,0.7);
+$purple-light: rgba(131,79,209,0.5);
 $yellow: rgba(240,218,91,1);
-$yellow-light: rgba(240,218,91,0.7);
+$yellow-light: rgba(240,218,91,0.5);
 $green: rgba(128,203,136,1);
-$green-light: rgba(128,203,136,0.7);
+$green-light: rgba(128,203,136,0.5);
+
+// Animate CSS
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.6.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2018 Daniel Eden
+ */
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.08, 1.08, 1.08);
+    transform: scale3d(1.08, 1.08, 1.08);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.08, 1.08, 1.08);
+    transform: scale3d(1.08, 1.08, 1.08);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
 
 // index.html
 
@@ -28,6 +91,11 @@ $green-light: rgba(128,203,136,0.7);
     height: 200px;
     border: 1px solid $dark-overlay;
     box-shadow: 0px 4px 8px $dark-overlay;
+  }
+
+  img:hover {
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
   }
 }
 
@@ -46,8 +114,17 @@ $green-light: rgba(128,203,136,0.7);
     box-shadow: 0px 4px 8px $dark-overlay;
   }
 
+  img:hover {
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+  }
+
   .background-highlight-orange {
     background-color: $orange-light;
+  }
+
+  .background-highlight-red {
+    background-color: $red-light;
   }
 
   .background-highlight-blue {
